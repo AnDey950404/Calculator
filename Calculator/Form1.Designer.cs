@@ -65,6 +65,7 @@
             this.btnClear.TabIndex = 1;
             this.btnClear.Text = "AC";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnMinus
             // 
@@ -86,6 +87,7 @@
             this.btnEqual.TabIndex = 3;
             this.btnEqual.Text = "=";
             this.btnEqual.UseVisualStyleBackColor = true;
+            this.btnEqual.Click += new System.EventHandler(this.btnEqual_Click);
             // 
             // btnThree
             // 
@@ -129,6 +131,7 @@
             this.btnDot.TabIndex = 7;
             this.btnDot.Text = ".";
             this.btnDot.UseVisualStyleBackColor = true;
+            this.btnDot.Click += new System.EventHandler(this.btnDot_Click);
             // 
             // btnOne
             // 
