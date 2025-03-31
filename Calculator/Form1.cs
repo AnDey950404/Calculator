@@ -15,13 +15,17 @@ namespace Calculator
         public Form1()
         {
             InitializeComponent();
+            txtNumber.Text = "0";
         }
+
+        //全域變數
+
 
         private void button8_Click(object sender, EventArgs e)
         {
             if (txtNumber.Text == "0")
                 txtNumber.Text = "";
-            txtNumber.Text = txtNumber.Text + "1";
+            txtNumber.Text += "1";
         }
 
         private void btnTwo_Click(object sender, EventArgs e)
