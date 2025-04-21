@@ -46,6 +46,8 @@
             this.btnEight = new System.Windows.Forms.Button();
             this.btnSeven = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
+            this.btnPercent = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtNumber
@@ -243,11 +245,35 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnBack
+            // 
+            this.btnBack.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnBack.Location = new System.Drawing.Point(12, 135);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(85, 38);
+            this.btnBack.TabIndex = 18;
+            this.btnBack.Text = "<<";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnPercent
+            // 
+            this.btnPercent.Font = new System.Drawing.Font("新細明體", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnPercent.Location = new System.Drawing.Point(13, 223);
+            this.btnPercent.Name = "btnPercent";
+            this.btnPercent.Size = new System.Drawing.Size(85, 38);
+            this.btnPercent.TabIndex = 19;
+            this.btnPercent.Text = "%";
+            this.btnPercent.UseVisualStyleBackColor = true;
+            this.btnPercent.Click += new System.EventHandler(this.btnPercent_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(476, 279);
+            this.Controls.Add(this.btnPercent);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnSeven);
             this.Controls.Add(this.btnEight);
@@ -293,6 +319,8 @@
         private System.Windows.Forms.Button btnEight;
         private System.Windows.Forms.Button btnSeven;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.Button btnPercent;
     }
 }
 

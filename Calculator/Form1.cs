@@ -153,5 +153,16 @@ namespace Calculator
             operators = -1;
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPercent_Click(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }
