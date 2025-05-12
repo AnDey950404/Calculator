@@ -156,12 +156,37 @@ namespace Calculator
 
         private void btnBack_Click(object sender, EventArgs e)
         {
+            string text = txtNumber.Text;
+
+            if (text.Length > 1)
+            {
+                // 移除最後一個字
+                txtNumber.Text = text.Substring(0, text.Length - 1);
+            }
+            else
+            {
+                // 如果只剩一個字，或是已經刪光，就顯示 "0"
+                txtNumber.Text = "0";
+            }
+        }
+
+        private void txtNumber_TextChanged(object sender, EventArgs e)
+        {
 
         }
 
         private void btnPercent_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                double currentValue = double.Parse(txtNumber.Text);
+                double percentValue = currentValue / 100;
+                txtNumber.Text = percentValue.ToString();
+            }
+            catch
+            {
+                MessageBox.Show("請輸入正確的數字！");
+            }
         }
 
     }

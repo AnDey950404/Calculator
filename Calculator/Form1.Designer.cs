@@ -57,6 +57,7 @@
             this.txtNumber.Name = "txtNumber";
             this.txtNumber.Size = new System.Drawing.Size(449, 40);
             this.txtNumber.TabIndex = 0;
+            this.txtNumber.TextChanged += new System.EventHandler(this.txtNumber_TextChanged);
             // 
             // btnClear
             // 
